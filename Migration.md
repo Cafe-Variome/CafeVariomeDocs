@@ -25,3 +25,7 @@ The core software is written in PHP 5.5. It is expected that some incompatibilit
 ---
 Data migration in its true essence is not needed as MySQL will be deployed as the main database management system for CafeVariome. The installation software in [Cafe Variome V2](https://github.com/CafeVariomeUoL/CafeVariomeV2) creates 64 databases. According to current team developers, less than 20 tables are in actual use. Current developers suggest to make the move with necessary tables (users, pages, menus, preferences, ...) and then move the rest of the tables if necessary.
 
+### Settings Table ###
+---
+ The settings table contains important configuration parameters used accross the software. In the current version, it is loaded via a _hook_ in CodeIgniter.
+A hook acts like an event that is fired on specified occasions. It is probably integrated in the software to facilitate _Aspect Oriented Programming_. The rows of the _settings_ tables are loaded with the help of a hook. There also some user interface constants in a file named _preferences.php_. It is obvious that the constants of this file are an exact copy of the _themes_ table in the database. As part of the migration to CodeIgniter 4, these two tables are merged into one table under the name _settings_. A singleton class named _Settings_(Settings.php in Models folder) has been created to fetch records from database.

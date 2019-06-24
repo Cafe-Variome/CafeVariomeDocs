@@ -19,7 +19,13 @@ A list of the component files is shown in the diagram below:
 
 ## Back-end Migration ##
 ---
-The core software is written in PHP 5.5. It is expected that some incompatibilities occur as the move to CodeIgniter4 is made.
+The core software is written in PHP 5.5. It is expected that some incompatibilities occur as the move to CodeIgniter4 is made.  
+
+### Authentication System ###
+---
+The authentication is carried out by _ion auth_. It is outdated. Moreover, using _keycloak_ is required as there is a need for a more extensive authentication system. 
+Decision has to be taken on deploying both authentication methods (i.e. _keycloak_ and _ion auth_) in the same software package or in separate packages.
+
 
 ## Data Migration ##
 ---

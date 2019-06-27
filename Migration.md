@@ -23,8 +23,19 @@ The core software is written in PHP 5.5. It is expected that some incompatibilit
 
 ### Authentication System ###
 ---
-The authentication is carried out by _ion auth_. It is outdated. Moreover, using _keycloak_ is required as there is a need for a more extensive authentication system. 
-Decision has to be taken on deploying both authentication methods (i.e. _keycloak_ and _ion auth_) in the same software package or in separate packages.
+_Ion Auth_ is responsible for authentication. The current _Ion Auth_ version is out of date. Moreover, using _keycloak_ is required as there is a need for a more extensive authentication system. 
+
+The authentication procedure is handled by a central [auth server](https://auth.cafevariome.org/). Initially, users submit their credentials via local login forms on their own installations. The data is then sent to auth server. The server looks for a possible match in the database and returns the decision to the local CafeVariome installation. This means that all user data is maintained in one database.  
+Additionally, local authentication is possible. However, it is used only when the central authentication server is not available. 
+
+It is worth mentioning that each user can only log in from the installation they belong to. Therefore, user roaming is not possible across other installations. 
+
+The activity diagram below illustrates the procedure:  
+
+![Authentication Activity Diagram](Authentication_Activity_Diagram.jpg)
+
+ 
+Decision has to be taken on deploying both authentication methods (i.e. _keycloak_ and _Ion Auth_) in the same software package or in separate packages.
 
 
 ## Data Migration ##

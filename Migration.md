@@ -37,6 +37,11 @@ The activity diagram below illustrates the procedure:
  
 Decision has to be taken on deploying both authentication methods (i.e. _keycloak_ and _Ion Auth_) in the same software package or in separate packages.
 
+### Keycloak Authentication ###
+---
+Keycloak is going to be used for authentication. Users are created through Keycloak API. Local logins through Ion Auth are still a necessity. The below diagram is suggested for authentication:
+
+![Keycloak Activity Diagram](Keycloak_Activity_Diagram.jpg)
 
 ## Data Migration ##
 ---

@@ -18,3 +18,8 @@ To load a library or model in CI 2 or 3 the following code is used:
     $this->load->library('library_name')
 
 However, in CI 4, to achieve the above functionality, the model or library is initiated as an object with the _new_ keyword in PHP. If the corresponding class is static, the name of the class with double colons is used to access methods and properties. Proper namespaces must be used in place.
+
+Code files for libraries go in Libraries folder. The default namespace for libraries is:
+
+    use App\Libraries;
+

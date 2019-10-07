@@ -23,3 +23,7 @@ Code files for libraries go in Libraries folder. The default namespace for libra
 
     use App\Libraries;
 
+
+## Build and Deployment
+
+On-demand build is recommended to prepare the software and install it on a target server.

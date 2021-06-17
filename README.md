@@ -34,3 +34,9 @@ After logging in successfully, you will be redirected to the first page of Cafe 
 By clicking on the Admin Dashboard, you will be redirected to main dashboard of Cafe Variome that contains the information about the system such as number of users, number of sources, current disk space status, which network you are in, related service statuses, so on and so forth. The concepts of sources, networks, etc will be disccussed in details accordingly in this document. As shown below in the fresh installation of Cafe Variome there is no source `nor network configured that must be configured through the links on the gray side of the page on the left side under the dashboard that are categorized into various sections with corresponding items in each section: Discovery (Discover), Data (Pipelines, Sources and Elastic Search), Network (Networks and Network Groups), Access Control (Users), Content (Pages) and System that contains Cafe Variome's instance settings.
 
 ![Alt text](Archive/screenshots/2.Admin-Dashboard.png?raw=true "Dashboard")
+
+Before Delving into details of uploading data for Data Discovery purpose, it must be noted that the Cafe Variome instance must fetch the installation key from CVNet application. CVNet application is responsible for providing the installation keys for each and every instance of Cafe Variome installations in which each instance could be discoverable with the provded key. In order to insert the installation key, the System Setting under the settings must be clicked as depicted in the below screenshot:
+
+![Alt text](Archive/screenshots/3.Settings.png?raw=true "Settings")
+
+

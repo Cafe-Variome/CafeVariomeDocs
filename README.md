@@ -26,3 +26,7 @@ After installing the Cafe Variome, the authentication must be accomplished in or
 $authRoutine is the variable for determining the modes of authentication. KeycloakFirst that represents the authentication through keycloak first and IonAuthOnly that authenticates users locally are the most popular modes among the above authentication modes. As noted above, if the keycloak first is utilized as an authentication mode, the keycloak first is used for authentication and in the case of keycloak failure local authentication will be used. It must be noted that the users must be available in the local database of Cafe Variome. Keycloak is able to register a new user and even enforce adding the record for the new user in the local database. As a result, the registed user can be added to the local database of Cafe Variome which means authentication from federated identities. The next section will discuss the dashboard of Cafe Variome.
 
 ## Dashboard
+
+After logging in successfully, you will be redirected to the first page of Cafe Variome as illustrated below:
+
+![Screenshot](/Archive/screenshots/1.successfull-login.png)

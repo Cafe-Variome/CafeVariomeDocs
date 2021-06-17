@@ -29,4 +29,4 @@ $authRoutine is the variable for determining the modes of authentication. Keyclo
 
 After logging in successfully, you will be redirected to the first page of Cafe Variome as illustrated below:
 
-![Screenshot](/Archive/screenshots/1.successfull-login.png)
+![Alt text](Archive/screenshots/1.successfull-login.png?raw=true "Successful Login")

@@ -35,8 +35,20 @@ By clicking on the Admin Dashboard, you will be redirected to main dashboard of 
 
 ![Alt text](Archive/screenshots/2.Admin-Dashboard.png?raw=true "Dashboard")
 
-Before Delving into details of uploading data for Data Discovery purpose, it must be noted that the Cafe Variome instance must fetch the installation key from CVNet application. CVNet application is responsible for providing the installation keys for each and every instance of Cafe Variome installations in which each instance could be discoverable with the provded key. In order to insert the installation key, the System Setting under the settings must be clicked as depicted in the below screenshot:
+Before Delving into details of uploading data for Data Discovery purpose, it must be noted that the CVNet is a network registry that keeps list of networks with corresponding installations. For further information regarding installing Cafe Variome, please refer to the main github page of Cafe Variome. Moreover, Elastic Search and Neo4J can be integrated with Cafe Variome to provide more capabilities to data discovery by including graph data bases by the aim of Neo4J and more speed for quering data when dealing with growing number of big documents by the aim of Elastic Search.  The System Setting under the settings must be clicked as depicted in the below screenshot consists of various sections of Cafe Variome installation:
 
 ![Alt text](Archive/screenshots/3.Settings.png?raw=true "Settings")
+
+- System Settings contain main system configurations such as Site Title, Authorization Server URL, Installation Key, etc.
+- Authentication Settings consists of authentication elements of Cafe Variome including OpenID URL, Client ID, Client Secret, etc.
+- Elastic Search Settings includes the URL for Elastic Search Service's Address.
+- Neo4J Settings includes corresponding elements regarding the various settings of Neo4J Service like Address of Neo4J Server and its corresponding port, Username and Password.
+- Discovery Settings is related to Access Control List (ACL) for sources. 
+- Endpont Settings configure the URL addresses for HPO, ORPHA and SNOMED.
+
+
+
+
+
 
 

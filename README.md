@@ -46,6 +46,24 @@ Before Delving into details of uploading data for Data Discovery purpose, it mus
 - Discovery Settings is related to Access Control List (ACL) for sources. 
 - Endpont Settings configure the URL addresses for HPO, ORPHA and SNOMED.
 
+## Sources
+
+After explaining the various settings of Cafe Variome, it is time to explain about adding sources to the Cafe Variome. The sources are acted as the containers for the files in which they will be queried for data discovery purpose. In this stage, Create a Source under the sources must be clicked in the left hand side of the dash board. As a result, the below screenshot will be shown on the dashboard in which the Source Name, Owner Name, Owner Email and other related information regarding the source must be filled.
+
+![Alt text](Archive/screenshots/4.Create-Source.png?raw=true "Source-Creation")
+
+Following the successful creation of the source, the below screenshot will be illustrated on the screen in which various actions can be accomplished to the newly created sourcs as follows: Upload Data Files, Import Files, Edit Source, Source File Status, Data Attributes and Values and Delete Source.
+
+![Alt text](Archive/screenshots/5.Source-Page.png?raw=true "Source-Page")
+
+By clicking on the Upload Data Files which is a green icon under the Actions, the following page will be shown to add the desired file. It must be mentioned that Cafe Variome accepts three kinds of files: Spreadsheet Files, PhenoPacket Files and VCF Files.
+
+![Alt text](Archive/screenshots/6.Adding-Records.png?raw=true "Add-Record")
+
+
+
+
+
 
 
 

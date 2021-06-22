@@ -56,9 +56,15 @@ Following the successful creation of the source, the below screenshot will be il
 
 ![Alt text](Archive/screenshots/5.Source-Page.png?raw=true "Source-Page")
 
-By clicking on the Upload Data Files which is a green icon under the Actions, the following page will be shown to add the desired file. It must be mentioned that Cafe Variome accepts three kinds of files: Spreadsheet Files, PhenoPacket Files and VCF Files.
+By clicking the Upload Data Files which is a green icon under the Actions, the following page will be shown to add the desired file. It must be mentioned that Cafe Variome accepts three kinds of files: Spreadsheet Files, PhenoPacket Files and VCF Files.
 
 ![Alt text](Archive/screenshots/6.Adding-Records.png?raw=true "Add-Record")
+
+After clicking the Upload Spreadsheet Files, you will be redirected to the below page in which you are able to upload spreadsheets files such as XLS, XLSX and CSV files. There are two options available for adding the files to the source that are append and overwrite. It must be noted that the pipeline must be selected from drop down list as well which will be explained later in this document.
+
+![Alt text](Archive/screenshots/7.Uploading-Files.png?raw=true "Upload-Files")
+
+
 
 
 

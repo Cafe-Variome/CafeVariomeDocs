@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\App\Models\EAV</OriginalElement>
+  <nodes>
+    <node x="0.0" y="3476.0">\App\Models\EAV</node>
+    <node x="2905.0" y="3380.0">\App\Models\Upload</node>
+    <node x="2768.25" y="0.0">\CodeIgniter\BaseModel</node>
+    <node x="2581.0" y="3464.0">\App\Models\Settings</node>
+    <node x="0.0" y="4363.0">\App\Models\IonAuthModel</node>
+    <node x="788.0" y="3632.0">\App\Models\Elastic</node>
+    <node x="2737.75" y="2296.0">\CodeIgniter\Model</node>
+    <node x="4925.0" y="3608.0">\App\Models\NetworkGroup</node>
+    <node x="4398.0" y="3632.0">\App\Models\NetworkRequest</node>
+    <node x="1037.0" y="3224.0">\App\Models\Network</node>
+    <node x="3953.0" y="3644.0">\App\Models\Page</node>
+    <node x="3498.0" y="3560.0">\App\Models\User</node>
+    <node x="744.0" y="4363.0">\App\Models\Pipeline</node>
+    <node x="1235.0" y="4363.0">\App\Models\NetworkAPIResponse</node>
+    <node x="1723.0" y="3392.0">\App\Models\Source</node>
+    <node x="557.0" y="4363.0">\App\Models\UIData</node>
+    <node x="1503.0" y="4363.0">\App\Models\URISegment</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\App\Models\Settings" target="\CodeIgniter\Model" relationship="GENERALIZATION">
+      <point x="0.0" y="-307.0" />
+      <point x="2733.0" y="3199.0" />
+      <point x="2962.25" y="3199.0" />
+      <point x="0.0" y="439.0" />
+    </edge>
+    <edge source="\App\Models\Elastic" target="\CodeIgniter\Model" relationship="GENERALIZATION">
+      <point x="0.0" y="-139.0" />
+      <point x="902.5" y="3199.0" />
+      <point x="2962.25" y="3199.0" />
+      <point x="0.0" y="439.0" />
+    </edge>
+    <edge source="\App\Models\User" target="\CodeIgniter\Model" relationship="GENERALIZATION">
+      <point x="0.0" y="-211.0" />
+      <point x="3715.5" y="3199.0" />
+      <point x="2962.25" y="3199.0" />
+      <point x="0.0" y="439.0" />
+    </edge>
+    <edge source="\App\Models\Source" target="\CodeIgniter\Model" relationship="GENERALIZATION">
+      <point x="0.0" y="-379.0" />
+      <point x="2142.0" y="3199.0" />
+      <point x="2962.25" y="3199.0" />
+      <point x="0.0" y="439.0" />
+    </edge>
+    <edge source="\App\Models\Upload" target="\CodeIgniter\Model" relationship="GENERALIZATION">
+      <point x="0.0" y="-391.0" />
+      <point x="3191.5" y="3199.0" />
+      <point x="2962.25" y="3199.0" />
+      <point x="0.0" y="439.0" />
+    </edge>
+    <edge source="\App\Models\Page" target="\CodeIgniter\Model" relationship="GENERALIZATION">
+      <point x="0.0" y="-127.0" />
+      <point x="4165.5" y="3199.0" />
+      <point x="2962.25" y="3199.0" />
+      <point x="0.0" y="439.0" />
+    </edge>
+    <edge source="\App\Models\EAV" target="\CodeIgniter\Model" relationship="GENERALIZATION">
+      <point x="0.0" y="-295.0" />
+      <point x="384.0" y="3199.0" />
+      <point x="2962.25" y="3199.0" />
+      <point x="0.0" y="439.0" />
+    </edge>
+    <edge source="\CodeIgniter\Model" target="\CodeIgniter\BaseModel" relationship="GENERALIZATION">
+      <point x="0.0" y="-439.0" />
+      <point x="0.0" y="1123.0" />
+    </edge>
+    <edge source="\App\Models\Network" target="\CodeIgniter\Model" relationship="GENERALIZATION">
+      <point x="0.0" y="-547.0" />
+      <point x="1370.0" y="3199.0" />
+      <point x="2962.25" y="3199.0" />
+      <point x="0.0" y="439.0" />
+    </edge>
+    <edge source="\App\Models\NetworkRequest" target="\CodeIgniter\Model" relationship="GENERALIZATION">
+      <point x="0.0" y="-139.0" />
+      <point x="4651.5" y="3199.0" />
+      <point x="2962.25" y="3199.0" />
+      <point x="0.0" y="439.0" />
+    </edge>
+    <edge source="\App\Models\NetworkGroup" target="\CodeIgniter\Model" relationship="GENERALIZATION">
+      <point x="0.0" y="-163.0" />
+      <point x="5234.0" y="3199.0" />
+      <point x="2962.25" y="3199.0" />
+      <point x="0.0" y="439.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.25" showDependencies="false" x="3485.6558441558436" y="2385.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

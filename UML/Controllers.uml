@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\App\Controllers\Admin</OriginalElement>
+  <nodes>
+    <node x="350.0" y="1278.0">\App\Controllers\Setting</node>
+    <node x="2100.0" y="1290.0">\App\Controllers\User</node>
+    <node x="1050.0" y="1278.0">\App\Controllers\NetworkGroup</node>
+    <node x="2450.0" y="1326.5">\App\Controllers\Discover</node>
+    <node x="4200.0" y="1338.0">\App\Controllers\Admin</node>
+    <node x="3150.0" y="1230.0">\App\Controllers\Network</node>
+    <node x="4060.5" y="554.5">\App\Controllers\Task</node>
+    <node x="3710.5" y="651.5">\App\Controllers\NetworkApi</node>
+    <node x="1400.0" y="1266.0">\App\Controllers\Page</node>
+    <node x="3500.0" y="1278.0">\App\Controllers\Pipeline</node>
+    <node x="700.0" y="1266.0">\App\Controllers\Source</node>
+    <node x="4517.5" y="663.0">\App\Controllers\BaseController</node>
+    <node x="2239.5" y="399.0">\App\Controllers\CVUI_Controller</node>
+    <node x="2660.5" y="651.5">\App\Controllers\ServiceApi</node>
+    <node x="2800.0" y="1290.0">\App\Controllers\Upload</node>
+    <node x="3360.5" y="0.0">\CodeIgniter\Controller</node>
+    <node x="1750.0" y="1314.0">\App\Controllers\NetworkRequest</node>
+    <node x="3850.0" y="1362.5">\App\Controllers\Elastic</node>
+    <node x="4550.0" y="1374.5">\App\Controllers\Home</node>
+    <node x="0.0" y="1110.0">\App\Controllers\Auth</node>
+    <node x="3360.5" y="615.5">\App\Controllers\QueryApi</node>
+    <node x="3010.5" y="351.0">\App\Controllers\AjaxApi</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\App\Controllers\QueryApi" target="\CodeIgniter\Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-90.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="\App\Controllers\Admin" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-66.5" />
+      <point x="4365.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\Task" target="\CodeIgniter\Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-151.0" />
+      <point x="4279.0" y="326.0" />
+      <point x="3525.5" y="326.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="\App\Controllers\AjaxApi" target="\CodeIgniter\Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-354.5" />
+      <point x="3175.5" y="326.0" />
+      <point x="3525.5" y="326.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="\App\Controllers\Setting" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-126.5" />
+      <point x="515.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\Discover" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-78.0" />
+      <point x="2615.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\Page" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-138.5" />
+      <point x="1565.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\NetworkGroup" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-126.5" />
+      <point x="1215.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\User" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-114.5" />
+      <point x="2265.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\Source" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-138.5" />
+      <point x="865.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\NetworkRequest" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-90.5" />
+      <point x="1915.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\BaseController" target="\CodeIgniter\Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-42.5" />
+      <point x="4682.5" y="326.0" />
+      <point x="3525.5" y="326.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="\App\Controllers\Network" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-174.5" />
+      <point x="3315.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\Auth" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-294.5" />
+      <point x="165.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\NetworkApi" target="\CodeIgniter\Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-54.0" />
+      <point x="3875.5" y="326.0" />
+      <point x="3525.5" y="326.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="\App\Controllers\Upload" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-114.5" />
+      <point x="2965.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\ServiceApi" target="\CodeIgniter\Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-54.0" />
+      <point x="2825.5" y="326.0" />
+      <point x="3525.5" y="326.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="\App\Controllers\Elastic" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-42.0" />
+      <point x="4015.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\Pipeline" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-126.5" />
+      <point x="3665.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\Home" target="\App\Controllers\CVUI_Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-30.0" />
+      <point x="4627.0" y="1085.0" />
+      <point x="2440.0" y="1085.0" />
+      <point x="0.0" y="306.5" />
+    </edge>
+    <edge source="\App\Controllers\CVUI_Controller" target="\CodeIgniter\Controller" relationship="GENERALIZATION">
+      <point x="0.0" y="-306.5" />
+      <point x="2440.0" y="326.0" />
+      <point x="3525.5" y="326.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.3307775377969764" showDependencies="false" x="1997.7590597453468" y="624.6643813254973" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

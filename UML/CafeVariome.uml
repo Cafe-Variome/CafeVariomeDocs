@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\App\Libraries\CafeVariome\Auth\AuthAdapter</OriginalElement>
+  <nodes>
+    <node x="2939.0" y="2846.0">\App\Libraries\CafeVariome\Email\IEmailAbstractFactory</node>
+    <node x="2164.0" y="3004.0">\App\Libraries\CafeVariome\PHPShellHelper</node>
+    <node x="288.0" y="2475.0">\App\Libraries\CafeVariome\Net\cURLAdapter</node>
+    <node x="2362.9999999999995" y="580.0">\App\Libraries\CafeVariome\Core\DataPipeLine\Input\PhenoPacketDataInput</node>
+    <node x="284.5" y="0.0">\App\Libraries\CafeVariome\Auth\Authenticator</node>
+    <node x="1085.0" y="846.0">\App\Libraries\CafeVariome\Core\IO\FileSystem\UploadFileMan</node>
+    <node x="1147.0" y="2846.0">\App\Libraries\CafeVariome\Auth\KeyCloakApi</node>
+    <node x="467.0" y="1679.0">\App\Libraries\CafeVariome\Net\CellBaseNetworkInterface</node>
+    <node x="2686.0" y="1398.0">\App\Libraries\CafeVariome\Query</node>
+    <node x="1214.0" y="1739.0">\App\Libraries\CafeVariome\Net\QueryNetworkInterface</node>
+    <node x="2807.5" y="1315.0">\App\Libraries\CafeVariome\CafeVariome</node>
+    <node x="937.0" y="1315.0">\App\Libraries\CafeVariome\Net\AbstractNetworkInterface</node>
+    <node x="486.0" y="1052.0">\App\Libraries\CafeVariome\Auth\OAuth</node>
+    <node x="1587.0" y="2846.0">\App\Libraries\Net\NetworkAPIResponse</node>
+    <node x="2935.0" y="664.0">\App\Libraries\CafeVariome\Core\DataPipeLine\Input\VCFDataInput</node>
+    <node x="2884.0" y="2134.0">\App\Libraries\CafeVariome\Auth\AuthAdapter</node>
+    <node x="1784.0" y="1763.0">\App\Libraries\CafeVariome\Net\VariantValidatorNetworkInterface</node>
+    <node x="1773.0" y="2268.0">\App\Libraries\CafeVariome\Email\CafeVariomeEmail</node>
+    <node x="187.25" y="2244.0">\App\Libraries\CafeVariome\Net\NetworkAdapter</node>
+    <node x="1772.0" y="2476.0">\App\Libraries\CafeVariome\Email\CredentialsEmail</node>
+    <node x="0.0" y="2846.0">\App\Libraries\CafeVariome\Core\IO\FileSystem\File</node>
+    <node x="2691.0" y="2846.0">\App\Libraries\CafeVariome\Net\APIResponse</node>
+    <node x="2377.0" y="2846.0">\App\Libraries\CafeVariome\Core\APIResponseBundle</node>
+    <node x="2089.0" y="2134.0">\App\Libraries\CafeVariome\Email\EmailMessage</node>
+    <node x="2939.0" y="2956.0">\App\Libraries\CafeVariome\Email\EmailFactory</node>
+    <node x="673.0" y="870.0">\App\Libraries\CafeVariome\Core\IO\FileSystem\SysFileMan</node>
+    <node x="278.5" y="352.0">\App\Libraries\CafeVariome\Auth\OpenIDAuthenticator</node>
+    <node x="1773.0" y="2134.0">\App\Libraries\CafeVariome\Email\IEmail</node>
+    <node x="941.5" y="0.0">\App\Libraries\CafeVariome\Core\IO\FileSystem\IFileMan</node>
+    <node x="1999.9999999999998" y="700.0">\App\Libraries\CafeVariome\Core\DataPipeLine\Input\UniversalDataInput</node>
+    <node x="1226.0" y="2134.0">\App\Libraries\CafeVariome\Core\DataPipeLine\Stream\DataStream</node>
+    <node x="941.0" y="1751.0">\App\Libraries\CafeVariome\Net\HPONetworkInterface</node>
+    <node x="0.0" y="1619.0">\App\Libraries\CafeVariome\Net\NetworkInterface</node>
+    <node x="598.0" y="2134.0">\App\Libraries\CafeVariome\Core\DataPipeLine\Stream\Neo4J</node>
+    <node x="0.0" y="968.0">\App\Libraries\CafeVariome\Auth\KeyCloak</node>
+    <node x="841.0" y="182.0">\App\Libraries\CafeVariome\Core\IO\FileSystem\FileMan</node>
+    <node x="1855.0" y="3004.0">\App\Libraries\CafeVariome\UniversalUploaderShellHelper</node>
+    <node x="412.0" y="2846.0">\App\Libraries\CafeVariome\Net\ServiceInterface</node>
+    <node x="184.75" y="2134.0">\App\Libraries\CafeVariome\Net\INetworkAdapter</node>
+    <node x="2046.25" y="2846.0">\App\Libraries\CafeVariome\ShellHelper</node>
+    <node x="0.0" y="2379.0">\App\Libraries\CafeVariome\Net\SocketAdapter</node>
+    <node x="2373.0" y="2134.0">\App\Libraries\CafeVariome\Auth\IonAuth</node>
+    <node x="2229.7499999999995" y="0.0">\App\Libraries\CafeVariome\Core\DataPipeLine\Input\DataInput</node>
+    <node x="1393.9999999999998" y="544.0">\App\Libraries\CafeVariome\Core\DataPipeLine\Input\EAVDataInput</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\App\Libraries\CafeVariome\Net\NetworkInterface" target="\App\Libraries\CafeVariome\Net\AbstractNetworkInterface" relationship="GENERALIZATION">
+      <point x="0.0" y="-235.0" />
+      <point x="223.5" y="1594.0" />
+      <point x="1067.5" y="1594.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Query" target="\App\Libraries\CafeVariome\CafeVariome" relationship="GENERALIZATION">
+      <point x="0.0" y="-307.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Auth\OAuth" target="\App\Libraries\CafeVariome\Auth\OpenIDAuthenticator" relationship="GENERALIZATION">
+      <point x="0.0" y="-67.0" />
+      <point x="557.0" y="943.0" />
+      <point x="395.0" y="943.0" />
+      <point x="0.0" y="283.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Net\CellBaseNetworkInterface" target="\App\Libraries\CafeVariome\Net\AbstractNetworkInterface" relationship="GENERALIZATION">
+      <point x="0.0" y="-175.0" />
+      <point x="694.0" y="1594.0" />
+      <point x="1067.5" y="1594.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\UniversalUploaderShellHelper" target="\App\Libraries\CafeVariome\ShellHelper" relationship="GENERALIZATION">
+      <point x="0.0" y="-54.0" />
+      <point x="1999.5" y="2979.0" />
+      <point x="2123.75" y="2979.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Core\IO\FileSystem\SysFileMan" target="\App\Libraries\CafeVariome\Core\IO\FileSystem\FileMan" relationship="GENERALIZATION">
+      <point x="0.0" y="-115.0" />
+      <point x="869.0" y="821.0" />
+      <point x="1043.0" y="821.0" />
+      <point x="0.0" y="307.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Core\DataPipeLine\Input\EAVDataInput" target="\App\Libraries\CafeVariome\Core\DataPipeLine\Input\DataInput" relationship="GENERALIZATION">
+      <point x="0.0" y="-259.0" />
+      <point x="1686.9999999999998" y="519.0" />
+      <point x="2405.2499999999995" y="519.0" />
+      <point x="0.0" y="247.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Net\NetworkAdapter" target="\App\Libraries\CafeVariome\Net\INetworkAdapter" relationship="REALIZATION">
+      <point x="0.0" y="-42.5" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Core\DataPipeLine\Input\VCFDataInput" target="\App\Libraries\CafeVariome\Core\DataPipeLine\Input\DataInput" relationship="GENERALIZATION">
+      <point x="0.0" y="-139.0" />
+      <point x="3064.0" y="519.0" />
+      <point x="2405.2499999999995" y="519.0" />
+      <point x="0.0" y="247.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Auth\OpenIDAuthenticator" target="\App\Libraries\CafeVariome\Auth\Authenticator" relationship="GENERALIZATION">
+      <point x="0.0" y="-283.0" />
+      <point x="0.0" y="151.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Net\VariantValidatorNetworkInterface" target="\App\Libraries\CafeVariome\Net\AbstractNetworkInterface" relationship="GENERALIZATION">
+      <point x="0.0" y="-91.0" />
+      <point x="2212.5" y="1594.0" />
+      <point x="1067.5" y="1594.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Net\QueryNetworkInterface" target="\App\Libraries\CafeVariome\Net\AbstractNetworkInterface" relationship="GENERALIZATION">
+      <point x="0.0" y="-115.0" />
+      <point x="1489.0" y="1594.0" />
+      <point x="1067.5" y="1594.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Core\IO\FileSystem\FileMan" target="\App\Libraries\CafeVariome\Core\IO\FileSystem\IFileMan" relationship="REALIZATION">
+      <point x="0.0" y="-307.0" />
+      <point x="0.0" y="66.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Core\IO\FileSystem\UploadFileMan" target="\App\Libraries\CafeVariome\Core\IO\FileSystem\FileMan" relationship="GENERALIZATION">
+      <point x="0.0" y="-139.0" />
+      <point x="1217.0" y="821.0" />
+      <point x="1043.0" y="821.0" />
+      <point x="0.0" y="307.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\PHPShellHelper" target="\App\Libraries\CafeVariome\ShellHelper" relationship="GENERALIZATION">
+      <point x="0.0" y="-54.0" />
+      <point x="2248.0" y="2979.0" />
+      <point x="2123.75" y="2979.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Net\SocketAdapter" target="\App\Libraries\CafeVariome\Net\NetworkAdapter" relationship="GENERALIZATION">
+      <point x="0.0" y="-211.0" />
+      <point x="134.0" y="2354.0" />
+      <point x="277.25" y="2354.0" />
+      <point x="0.0" y="42.5" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Net\cURLAdapter" target="\App\Libraries\CafeVariome\Net\NetworkAdapter" relationship="GENERALIZATION">
+      <point x="0.0" y="-115.0" />
+      <point x="420.5" y="2354.0" />
+      <point x="277.25" y="2354.0" />
+      <point x="0.0" y="42.5" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Email\CredentialsEmail" target="\App\Libraries\CafeVariome\Email\CafeVariomeEmail" relationship="GENERALIZATION">
+      <point x="0.0" y="-67.0" />
+      <point x="0.0" y="79.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Email\EmailFactory" target="\App\Libraries\CafeVariome\Email\IEmailAbstractFactory" relationship="REALIZATION">
+      <point x="0.0" y="-30.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Email\CafeVariomeEmail" target="\App\Libraries\CafeVariome\Email\IEmail" relationship="REALIZATION">
+      <point x="0.0" y="-79.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Core\DataPipeLine\Input\UniversalDataInput" target="\App\Libraries\CafeVariome\Core\DataPipeLine\Input\DataInput" relationship="GENERALIZATION">
+      <point x="0.0" y="-103.0" />
+      <point x="2171.4999999999995" y="519.0" />
+      <point x="2405.2499999999995" y="519.0" />
+      <point x="0.0" y="247.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Core\DataPipeLine\Input\PhenoPacketDataInput" target="\App\Libraries\CafeVariome\Core\DataPipeLine\Input\DataInput" relationship="GENERALIZATION">
+      <point x="0.0" y="-223.0" />
+      <point x="2638.9999999999995" y="519.0" />
+      <point x="2405.2499999999995" y="519.0" />
+      <point x="0.0" y="247.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Auth\KeyCloak" target="\App\Libraries\CafeVariome\Auth\OpenIDAuthenticator" relationship="GENERALIZATION">
+      <point x="0.0" y="-151.0" />
+      <point x="233.0" y="943.0" />
+      <point x="395.0" y="943.0" />
+      <point x="0.0" y="283.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Net\HPONetworkInterface" target="\App\Libraries\CafeVariome\Net\AbstractNetworkInterface" relationship="GENERALIZATION">
+      <point x="0.0" y="-103.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.749067599067599" showDependencies="false" x="1936.8873502411702" y="493.3944297494944" />
+  <SelectedNodes>
+    <node>\App\Libraries\CafeVariome\Auth\Authenticator</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

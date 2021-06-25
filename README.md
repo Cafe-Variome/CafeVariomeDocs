@@ -65,6 +65,14 @@ After clicking the Upload Spreadsheet Files, you will be redirected to the below
 
 ![Alt text](Archive/screenshots/7.Uploading-Files.png?raw=true "Upload-Files")
 
+It must be noted appropriate installation path of php must be inserted in Constant.php that is located in app/Config directory. The appropriate path of php on linux systems can be found with *which php* command. Here is the sample of inserted php path within the Constant.php file.
+
+```php
+define('PHP_BIN_PATH', '/opt/php7/bin/php');
+
+```
+
+
 
 
 

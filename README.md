@@ -72,6 +72,14 @@ define('PHP_BIN_PATH', '/opt/php7/bin/php');
 
 ```
 
+After adding the data files, data attributes and values can be viewed by clicking on Data Attributes and Values under action which is illustrated on the below screenshot:
+
+![Alt text](Archive/screenshots/8.Data-Attributes-and-Values.png?raw=true "Data-Attributes")
+
+
+
+
+
 
 
 

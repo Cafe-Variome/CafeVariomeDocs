@@ -36,7 +36,11 @@ By clicking on the Admin Dashboard, you will be redirected to main dashboard of 
 
 ![Alt text](Archive/screenshots/2.Admin-Dashboard.png?raw=true "Dashboard")
 
-Before delving into details of uploading data for Data Discovery purpose, it must be noted that the CVNet is a network registry that keeps list of networks with corresponding installations. CVNet is a significant application that enables communications between Cafe Variome instances throught the unique identifier for each Cafe Variome (Installation Key). Thereby, CVnet is a tool for data discovery purpose between Cafe Variomes which enable us to perform queries from different Cafe Variomes that would be shown as an aggregated result on the query page. For further information regarding installing Cafe Variome, please refer to the main github page of Cafe Variome. Moreover, Elastic Search and Neo4J can be integrated with Cafe Variome to provide more capabilities to data discovery by including graph data bases by the aim of Neo4J and more speed for quering data when dealing with growing number of big documents by the aim of Elastic Search.  The System Setting under the settings must be clicked as depicted in the below screenshot consists of various sections of Cafe Variome installation:
+Before delving into details of uploading data for Data Discovery purpose, it must be noted that the CVNet is a network registry that keeps list of networks with corresponding installations. CVNet is a significant application that enables communications between Cafe Variome instances throught the unique identifier for each Cafe Variome (Installation Key). Thereby, CVnet is a tool for data discovery purpose between Cafe Variomes which enable us to perform queries from different Cafe Variomes that would be shown as an aggregated result on the query page. For further information regarding installing Cafe Variome, please refer to the main github page of Cafe Variome. Moreover, Elastic Search and Neo4J can be integrated with Cafe Variome to provide more capabilities to data discovery by including graph data bases by the aim of Neo4J and more speed for quering data when dealing with growing number of big documents by the aim of Elastic Search.
+
+## Settings 
+
+Various settings of Cafe Variome must be configured via the The System Settings under the Dashboard menu which is illustrated in the below screenshot consisting of numerous sections of Cafe Variome installation:
 
 ![Alt text](Archive/screenshots/3.Settings.png?raw=true "Settings")
 
@@ -75,6 +79,32 @@ define('PHP_BIN_PATH', '/opt/php7/bin/php');
 After adding the data files, data attributes and values can be viewed by clicking on Data Attributes and Values under action which is illustrated on the below screenshot:
 
 ![Alt text](Archive/screenshots/8.Data-Attributes-and-Values.png?raw=true "Data-Attributes")
+
+## Networks
+
+After adding the files to the sources, Network section must be explained. Each Network may contain numerous sources in which each source may contain different files. Thus, this design can help us to distribute many files in different sources. As a result, the disered result of query can be gathered and shown on your screen based on the network design by adding the result of each cafe variome instances. The following diagram is the best way to explain the importance of network concept in order to produce unified query result from various Cafe Variome nodes in a Network.
+
+![Alt text](Archive/screenshots/9.Networks.png?raw=true "Network")
+
+
+The following screenshot illustrates different sections of Network in Cafe Variome. 
+
+![Alt text](Archive/screenshots/10.NetworkSection.png?raw=true "Network-Section")
+
+As explained above, each source must be joined to a network for data discovery. First, the network must be created by clicking Create a Network as depicted here:
+
+![Alt text](Archive/screenshots/11.CreateNetwork.png?raw=true "Create-Network")
+
+After creating the network following screenshot will be shown on your screen as a result of successful network creation:
+
+
+![Alt text](Archive/screenshots/12.Successful-Netwrk-Creation.png?raw=true "Create-Network-Successful")
+
+
+
+Following this, the source can be added to a network by clicking 
+
+
 
 
 

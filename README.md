@@ -26,6 +26,13 @@ class AuthAdapter extends \CodeIgniter\Config\BaseConfig
 ```
 $authRoutine is the variable for determining the modes of authentication. KeycloakFirst that represents the authentication through keycloak first and IonAuthOnly that authenticates users locally are the most popular modes among the above authentication modes. As noted above, if the keycloak first is utilized as an authentication mode, the keycloak first is used for authentication and in the case of keycloak failure local authentication will be used. It must be noted that the users must be available in the local database of Cafe Variome. Keycloak is able to register a new user and even enforce adding the record for the new user in the local database. As a result, the registed user can be added to the local database of Cafe Variome which means authentication from federated identities. The next section will discuss the dashboard of Cafe Variome.
 
+It must be mentioned that proper path for php executable must be inserted in Constant.php that is located in app/Config directory. The appropriate path of php on linux systems can be found with *which php* command. Here is the sample of inserted php path within the Constant.php file.
+
+```php
+define('PHP_BIN_PATH', '/opt/php7/bin/php');
+
+```
+
 ## Dashboard
 
 After logging in successfully, you will be redirected to the first page of Cafe Variome as illustrated below:
@@ -53,28 +60,21 @@ Various settings of Cafe Variome must be configured via the The System Settings 
 
 ## Sources
 
-After explaining the various settings of Cafe Variome, it is time to explain about adding sources to the Cafe Variome. Sources are the containers which must be added as containers for data files. Each source may contain numerous data files. Therefore, the inserted data files that are inserted in the sources will be queried for data discovery purpose. In this stage, Create a Source under the sources must be clicked in the left hand side of the dash board. As a result, the below screenshot will be shown on the dashboard in which the Source Name, Owner Name, Owner Email and other related information regarding the source must be filled.
+ Sources are considered as placeholders for data files.  Thereby, a source can be created by clicking Create a Source under the Sources for data discovery. As a result, the below screenshot will be shown in which the Source Name, Owner Name, Owner Email and other related information regarding the source must be filled.
 
 ![Alt text](Archive/screenshots/4.Create-Source.png?raw=true "Source-Creation")
 
-Following the successful creation of the source, the below screenshot will be illustrated on the screen in which various actions can be accomplished to the newly created sourcs as follows: Upload Data Files, Import Files, Edit Source, Source File Status, Data Attributes and Values and Delete Source.
+Following the successful creation of the source, the below screenshot will be shown on the screen in which various actions can be accomplished for the newly created sources as follows: Upload Data Files, Import Files, Edit Source, Source File Status, Data Attributes and Values and Delete Source.
 
 ![Alt text](Archive/screenshots/5.Source-Page.png?raw=true "Source-Page")
 
-By clicking the Upload Data Files which is a green icon under the Actions, the following page will be shown to add the desired file. It must be mentioned that Cafe Variome accepts three kinds of files: Spreadsheet Files, PhenoPacket Files and VCF Files.
+By clicking the Upload Data Files which is a green icon under the Actions, the following module will be shown to add the desired file. It must be mentioned that Cafe Variome accepts three kinds of files: Spreadsheet Files, PhenoPacket Files and VCF Files. It must be noted that the added data files only reside on the specified Cafe Variome instance and it would not be exposed to un authorized users. Thus, only count subject IDs will be shown to the others.
 
 ![Alt text](Archive/screenshots/6.Adding-Records.png?raw=true "Add-Record")
 
-After clicking the Upload Spreadsheet Files, you will be redirected to the below page in which you are able to upload spreadsheets files such as XLS, XLSX and CSV files. There are two options available for adding the files to the source that are append and overwrite. It must be noted that the pipeline must be selected from drop down list as well which will be explained later in this document.
+After clicking the Upload Spreadsheet Files, you will be redirected to the below page in which you are able to upload spreadsheets files such as XLS, XLSX and CSV files. There are two options available for adding the files to the source that are *append* and *overwrite*. It must be noted that the pipeline must be selected from drop down list as well which will be explained later in this document.
 
 ![Alt text](Archive/screenshots/7.Uploading-Files.png?raw=true "Upload-Files")
-
-It must be noted appropriate installation path of php must be inserted in Constant.php that is located in app/Config directory. The appropriate path of php on linux systems can be found with *which php* command. Here is the sample of inserted php path within the Constant.php file.
-
-```php
-define('PHP_BIN_PATH', '/opt/php7/bin/php');
-
-```
 
 After adding the data files, data attributes and values can be viewed by clicking on Data Attributes and Values under action which is illustrated on the below screenshot:
 
@@ -82,27 +82,54 @@ After adding the data files, data attributes and values can be viewed by clickin
 
 ## Networks
 
-After adding the files to the sources, Network section must be explained. Each Network may contain numerous sources in which each source may contain different files. Thus, this design can help us to distribute many files in different sources. As a result, the disered result of query can be gathered and shown on your screen based on the network design by adding the result of each cafe variome instances. The following diagram is the best way to explain the importance of network concept in order to produce unified query result from various Cafe Variome nodes in a Network.
+ Communication between multiple instances of Cafe Variome can be done by Network. This is useful for data discovery where several Cafe Variome instances are utilized for sharing data among each others. For data discovery, information can be gathered from various data files on each Cafe Variome instance due to network design. The following diagram depicts the communication among Cafe Variome instances in the network for data discovery purpose.
 
 ![Alt text](Archive/screenshots/9.Networks.png?raw=true "Network")
-
 
 The following screenshot illustrates different sections of Network in Cafe Variome. 
 
 ![Alt text](Archive/screenshots/10.NetworkSection.png?raw=true "Network-Section")
 
-As explained above, each source must be joined to a network for data discovery. First, the network must be created by clicking Create a Network as depicted here:
+As explained above, each source must be joined to a network for data discovery. First, the network must be created by clicking Create a Network as shown here:
 
 ![Alt text](Archive/screenshots/11.CreateNetwork.png?raw=true "Create-Network")
 
-After creating the network following screenshot will be shown on your screen as a result of successful network creation:
-
+After creating the network successfully following screenshot will be shown on your screen:
 
 ![Alt text](Archive/screenshots/12.Successful-Netwrk-Creation.png?raw=true "Create-Network-Successful")
 
 
+## Network Groups
 
-Following this, the source can be added to a network by clicking 
+Network Groups concept aims us for data discovery where data belongs to various stakeholders in a secure manner. Thereby, you are only allowed to access the specific attributes that are defined by the data owner. By clicking *Create a Network Group*, you will be redirected to the Create Group page. In this page, following information must be filled out: Network Name, Group Name, Description and Group Type as depicted in the below screenshot:
+
+![Alt text](Archive/screenshots/13.CreateNetworkGroups.png?raw=true "Create-Network-Groups")
+
+Following successful creation of Network Groups the below page is shown. This page consists of two groups a newly created network group and the master one which is not deletable. It must be mentioned that network groups can not be created prior to creating networks.
+
+![Alt text](Archive/screenshots/14.NetworkGroupsPage.png?raw=true "Network-Groups")
+
+After successful creation of Network Groups, the user can be assigned to access to the specific source through the Network Groups concept as depicted here:
+
+![Alt text](Archive/screenshots/15.EditUserNetworkGroups.png?raw=true "Network-Groups-Users")
+
+## Pipeline
+
+This section plays the pivotal role for ordering data files. First of all, it determines the unique value or column that is related to each record or row. Secondly, the various coulumns can be grouped together for better query performance that can be grouped individually or customly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

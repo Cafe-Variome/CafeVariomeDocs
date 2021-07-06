@@ -26,6 +26,8 @@ class AuthAdapter extends \CodeIgniter\Config\BaseConfig
 ```
 $authRoutine is the variable for determining the modes of authentication. KeycloakFirst that represents the authentication through keycloak first and IonAuthOnly that authenticates users locally are the most popular modes among the above authentication modes. As noted above, if the keycloak first is utilized as an authentication mode, the keycloak first is used for authentication and in the case of keycloak failure local authentication will be used. It must be noted that the users must be available in the local database of Cafe Variome. Keycloak is able to register a new user and even enforce adding the record for the new user in the local database. As a result, the registed user can be added to the local database of Cafe Variome which means authentication from federated identities. The next section will discuss the dashboard of Cafe Variome.
 
+##PHP binary path
+
 It must be mentioned that proper path for php executable must be inserted in Constant.php that is located in app/Config directory. The appropriate path of php on linux systems can be found with *which php* command. Here is the sample of inserted php path within the Constant.php file.
 
 ```php
@@ -39,7 +41,7 @@ After logging in successfully, you will be redirected to the first page of Cafe 
 
 ![Alt text](Archive/screenshots/1.successfull-login.png?raw=true "Successful Login")
 
-By clicking on the Admin Dashboard, you will be redirected to main dashboard of Cafe Variome that contains the information about the system such as number of users, number of sources, current disk space status, which network you are in, related service statuses, so on and so forth. The concept of sources, networks, etc will be disccussed later in this document. After installing fresh Cafe Variome, sources, networks and other elements must be added which must be configured through the links on the left side under the dashboard. As shown in the below screenshot, dashboard is categorized into various sections with corresponding items in each section: Discovery (Discover), Data (Pipelines, Sources and Elastic Search), Network (Networks and Network Groups), Access Control (Users), Content (Pages) and System that contains Cafe Variome's instance settings.
+By clicking on the Admin Dashboard, you will be redirected to main dashboard of Cafe Variome that contains the information about the system such as number of users, number of sources, current disk space status, which network you are in, related service statuses, so on and so forth. The concept of sources, networks, etc will be disccussed later in this document. After installing fresh Cafe Variome, sources, networks and other elements must be added and configured through the links on the left side under the dashboard. As shown in the below screenshot, dashboard is categorized into various sections with corresponding items in each section: Discovery (Discover), Data (Pipelines, Sources and Elastic Search), Network (Networks and Network Groups), Access Control (Users), Content (Pages) and System that contains Cafe Variome's instance settings.
 
 ![Alt text](Archive/screenshots/2.Admin-Dashboard.png?raw=true "Dashboard")
 
@@ -82,7 +84,7 @@ After adding the data files, data attributes and values can be viewed by clickin
 
 ## Networks
 
- Communication between multiple instances of Cafe Variome can be done by Network. This is useful for data discovery where several Cafe Variome instances are utilized for sharing data among each others. For data discovery, information can be gathered from various data files on each Cafe Variome instance due to network design. The following diagram depicts the communication among Cafe Variome instances in the network for data discovery purpose.
+ Communication among multiple instances of Cafe Variome can be done through Networks. This is useful for data discovery where several Cafe Variome instances are utilized for sharing data among each other. For data discovery, information can be gathered from various data files on each Cafe Variome instance due to network design. The following diagram depicts the communication among Cafe Variome instances in the network for data discovery purpose.
 
 ![Alt text](Archive/screenshots/9.Networks.png?raw=true "Network")
 
@@ -115,7 +117,7 @@ After successful creation of Network Groups, the user can be assigned to access 
 
 ## Pipeline
 
-This section plays the pivotal role for ordering data files. First of all, it determines the unique value for each record or row such as Subject_ID inside the file or even for the individaul files. Secondly, the various coulumns can be grouped together for better query performance that can be grouped individually or customly. Thus, by ordering the records within the files or the individaual files, data discovery can be accomplished quickly and accurately. By clicking the pipeline in the dashboard under the data section two options will be shown as follws: *Create a Pipeline* and *View Pipelines* as depicted in the below screenshot:
+A pipeline plays a pivotal role in processing data files. First of all, it determines the unique value for each record or row such as Subject_ID inside the file or even for the individual files. Secondly, the various columns can be grouped together for better query performance that can be grouped individually or customly. Thus, by ordering the records within the files or the individaual files, data discovery can be accomplished quickly and accurately. By clicking the pipeline in the dashboard under the data section two options will be shown as follws: *Create a Pipeline* and *View Pipelines* as depicted in the below screenshot:
 
 ![Alt text](Archive/screenshots/16.Pipelines.png?raw=true "Pipelines")
 
@@ -147,7 +149,7 @@ For data discovery, first you need to select the network you would like to searc
 
 ![Alt text](Archive/screenshots/20.SelectNetwork.png?raw=true "SelectNetwork")
 
-Finally, this is the page for data discovery. Various fields can be selected in the below page from patient charectristics up to HPO Term Pairwise Similarity.
+Finally, this is Query Builder interface. Various fields can be selected in the below page from patient charectristics up to HPO and ORPHA Terms.
 
 ![Alt text](Archive/screenshots/21.Query.png?raw=true "Query")
 

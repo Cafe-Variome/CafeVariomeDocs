@@ -26,7 +26,7 @@ class AuthAdapter extends \CodeIgniter\Config\BaseConfig
 ```
 $authRoutine is the variable for determining the modes of authentication. KeycloakFirst that represents the authentication through keycloak first and IonAuthOnly that authenticates users locally are the most popular modes among the above authentication modes. As noted above, if the keycloak first is utilized as an authentication mode, the keycloak first is used for authentication and in the case of keycloak failure local authentication will be used. It must be noted that the users must be available in the local database of Cafe Variome. Keycloak is able to register a new user and even enforce adding the record for the new user in the local database. As a result, the registed user can be added to the local database of Cafe Variome which means authentication from federated identities. The next section will discuss the dashboard of Cafe Variome.
 
-##PHP binary path
+## PHP binary path
 
 It must be mentioned that proper path for php executable must be inserted in Constant.php that is located in app/Config directory. The appropriate path of php on linux systems can be found with *which php* command. Here is the sample of inserted php path within the Constant.php file.
 

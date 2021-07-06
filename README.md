@@ -28,12 +28,15 @@ $authRoutine is the variable for determining the modes of authentication. Keyclo
 
 ## PHP binary path
 
-It must be mentioned that proper path for php executable must be inserted in Constant.php that is located in app/Config directory. The appropriate path of php on linux systems can be found with *which php* command. Here is the sample of inserted php path within the Constant.php file.
+Since Cafe Variome runs time-consuming tasks that go beyond the standard web request life-time, it is necessary to run such tasks in the background through the *shell_exec()* command. Therefore, the absolute path to the PHP binary needs to be configured in Constants.php that is located in app/Config/ directory. The appropriate path of php on linux systems can be found using *which php* command. Here is the sample of inserted php path within the Constant.php file.
 
 ```php
 define('PHP_BIN_PATH', '/opt/php7/bin/php');
 
 ```
+## Cafe Variome Net (CVNet)
+
+CVNet is a network registry software that keeps a list of networks with corresponding installations. CVNet enables communication among Cafe Variome instances at query time. When a user creates and runs a query at one Cafe Variome instance, before processing the query, that Cafe Variome instance gets a list of participating installations in the network from CVNet, and finally sends the query to all installations in the network. Cafe Variome needs to communicate with CVNet to function properly.
 
 ## Dashboard
 
@@ -45,7 +48,7 @@ By clicking on the Admin Dashboard, you will be redirected to main dashboard of 
 
 ![Alt text](Archive/screenshots/2.Admin-Dashboard.png?raw=true "Dashboard")
 
-Before delving into details of uploading data for Data Discovery purpose, it must be noted that the CVNet is a network registry that keeps list of networks with corresponding installations. CVNet is a significant application that enables communications between Cafe Variome instances throught the unique identifier for each Cafe Variome (Installation Key). Thereby, CVnet is a tool for data discovery purpose between Cafe Variomes which enable us to perform queries from different Cafe Variomes that would be shown as an aggregated result on the query page. For further information regarding installing Cafe Variome, please refer to the main github page of Cafe Variome. Moreover, Elastic Search and Neo4J can be integrated with Cafe Variome to provide more capabilities to data discovery by including graph data bases by the aim of Neo4J and more speed for quering data when dealing with growing number of big documents by the aim of Elastic Search.
+For further information regarding installing Cafe Variome, please refer to the main github page of Cafe Variome. Moreover, Elastic Search and Neo4J can be integrated with Cafe Variome to provide more capabilities to data discovery by including graph data bases by the aim of Neo4J and more speed for quering data when dealing with growing number of big documents by the aim of Elastic Search.
 
 ## Settings 
 

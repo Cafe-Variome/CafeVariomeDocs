@@ -143,6 +143,18 @@ This section is utilized for data discovery purpose based on the data files whic
 
 ![Alt text](Archive/screenshots/19.ServiceStatus.png?raw=true "ES")
 
+For data discovery, first you need to select the network you would like to search as shown here:
+
+![Alt text](Archive/screenshots/20.SelectNetwork.png?raw=true "SelectNetwork")
+
+Finally, this is the page for data discovery. Various fields can be selected in the below page from patient charectristics up to HPO Term Pairwise Similarity.
+
+![Alt text](Archive/screenshots/21.Query.png?raw=true "Query")
+
+
+
+
+
 
 
 

@@ -141,7 +141,9 @@ For uploading the data file names in the sources, the pipeline must be selected 
 
 This section is utilized for data discovery purpose based on the data files which were inserted in each source. It must be mentioned that Elasticsearch is the search engine for Cafe Variome queries. Thus, it must be installed and enabled for data discovery. If elastic search is run properly, it will be shown on the dashboard as a Running Service. Please consider Service Status in the below screenshot regarding the running services:
 
-![Alt text](Archive/screenshots/19.ServiceStatus.pngraw=true "ES")
+![Alt text](Archive/screenshots/19.ServiceStatus.png?raw=true "ES")
+
+
 
 
 

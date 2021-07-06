@@ -106,7 +106,9 @@ After creating the network successfully following screenshot will be shown on yo
 
 ## Network Groups
 
-Network Groups concept aims us for data discovery where data belongs to various stakeholders in a secure manner. Thereby, you are only allowed to access the specific attributes that are defined by the data owner. By clicking *Create a Network Group*, you will be redirected to the Create Group page. In this page, following information must be filled out: Network Name, Group Name, Description and Group Type as depicted in the below screenshot:
+Network groups are a weaker form of Networks that provide more control over data access in Cafe Variome. They are specifically useful when one Cafe Variome instance wants to take part in discovery within a network that belongs to another instance of Cafe Variome.
+
+ By clicking *Create a Network Group*, you will be redirected to the Create Group page. In this page, following information must be filled out: Network Name, Group Name, Description and Group Type as depicted in the below screenshot:
 
 ![Alt text](Archive/screenshots/13.CreateNetworkGroups.png?raw=true "Create-Network-Groups")
 

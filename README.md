@@ -115,7 +115,38 @@ After successful creation of Network Groups, the user can be assigned to access 
 
 ## Pipeline
 
-This section plays the pivotal role for ordering data files. First of all, it determines the unique value or column that is related to each record or row. Secondly, the various coulumns can be grouped together for better query performance that can be grouped individually or customly.
+This section plays the pivotal role for ordering data files. First of all, it determines the unique value for each record or row such as Subject_ID inside the file or even for the individaul files. Secondly, the various coulumns can be grouped together for better query performance that can be grouped individually or customly. Thus, by ordering the records within the files or the individaual files, data discovery can be accomplished quickly and accurately. By clicking the pipeline in the dashboard under the data section two options will be shown as follws: *Create a Pipeline* and *View Pipelines* as depicted in the below screenshot:
+
+![Alt text](Archive/screenshots/16.Pipelines.png?raw=true "Pipelines")
+
+
+You will be redirected to Create Data Pipeline page by clicking *Create a Pipeline*. As shown below, the followowing entries can be defined for each pipeline:
+
+- Name: Each pipeline can be recognized by its name.
+- Subject ID Location: This is the unique identifier for each record within the file by specifying the attribute name for it or file itself.
+- Subject ID Attribute Name: If Attribute in File is selected for the Subject ID Location, the attribute can be filled out here as a unique identifier.
+- Grouping: as discussed earlier, grouping can be used to group numerous attributes together that can be done *Group Individually* or *Custom*.
+- Internal Delimeter: By describing the value here like , or /, it can be determined by Cafe Variome how to seperate each record within the an individual cell in the file. 
+- HPO Attribute Name, Negated HPO Attribute Name or ORPHA Attribute Name can also be defined for each pipeline.
+
+![Alt text](Archive/screenshots/17.CreateDataPipeline.png?raw=true "CreatePipelines")
+
+After creating the pipeline, the pipelines can be viewed by clicking *View Pipeline* as depicted here:
+
+![Alt text](Archive/screenshots/18.DataPipelines.png?raw=true "ViewPipelines")
+
+For uploading the data file names in the sources, the pipeline must be selected for ordering purpose.
+
+## Discover
+
+This section is utilized for data discovery purpose based on the data files which were inserted in each source. It must be mentioned that Elasticsearch is the search engine for Cafe Variome queries. Thus, it must be installed and enabled for data discovery. If elastic search is run properly, it will be shown on the dashboard as a Running Service. Please consider Service Status in the below screenshot regarding the running services:
+
+![Alt text](Archive/screenshots/19.ServiceStatus.pngraw=true "ES")
+
+
+
+
+
 
 
 

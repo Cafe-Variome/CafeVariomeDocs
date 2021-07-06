@@ -122,7 +122,9 @@ After successful creation of Network Groups, the user can be assigned to access 
 
 ## Pipeline
 
-A pipeline plays a pivotal role in processing data files. First of all, it determines the unique value for each record or row such as Subject_ID inside the file or even for the individual files. Secondly, the various columns can be grouped together for better query performance that can be grouped individually or customly. Thus, by ordering the records within the files or the individaual files, data discovery can be accomplished quickly and accurately. By clicking the pipeline in the dashboard under the data section two options will be shown as follws: *Create a Pipeline* and *View Pipelines* as depicted in the below screenshot:
+A pipeline plays a pivotal role in processing data files. In fact a pipeline guides the data processing engine on how to treat data in data files. Pipelines determine a few necessary rules for each uploaded data file, such as where the record identifier could be found, or if a spreadsheet data file is not normalised.
+
+ By clicking the pipeline in the dashboard under the data section two options will be shown as follws: *Create a Pipeline* and *View Pipelines* as depicted in the below screenshot:
 
 ![Alt text](Archive/screenshots/16.Pipelines.png?raw=true "Pipelines")
 
@@ -130,9 +132,9 @@ A pipeline plays a pivotal role in processing data files. First of all, it deter
 You will be redirected to Create Data Pipeline page by clicking *Create a Pipeline*. As shown below, the followowing entries can be defined for each pipeline:
 
 - Name: Each pipeline can be recognized by its name.
-- Subject ID Location: This is the unique identifier for each record within the file by specifying the attribute name for it or file itself.
-- Subject ID Attribute Name: If Attribute in File is selected for the Subject ID Location, the attribute can be filled out here as a unique identifier.
-- Grouping: as discussed earlier, grouping can be used to group numerous attributes together that can be done *Group Individually* or *Custom*.
+- Subject ID Location: this is the unique identifier for each record within a file. The record identifier either exists in the file itself or is the filename.
+- Subject ID Attribute Name: if Attribute in File is selected for the Subject ID Location, the attribute can be filled out here.
+- Grouping: grouping can be used to group numerous attributes together in spreadsheet files. By default all columns in the spreadsheet are *grouped individually*. Alternatively, it is possible to use the *Custom* option and instruct Cafe Variome to group specific columns together. In order to do this, a comma separated list of numbers is accepted. Each number in the list shows the end of a group. It is important to note that solumns that need to be grouped together have to be next to one another. Grouping is useful when multiple attributes need to be queried together. It ensures correct results are fetched as well as faster retrieval time and less disk space. For instance variant data such as *chromosome*, *position*, *reference allele*, and *alternate allele* can be grouped together.
 - Internal Delimeter: By describing the value here like , or /, it can be determined by Cafe Variome how to seperate each record within the an individual cell in the file. 
 - HPO Attribute Name, Negated HPO Attribute Name or ORPHA Attribute Name can also be defined for each pipeline.
 

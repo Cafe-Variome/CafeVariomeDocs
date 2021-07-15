@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\App\Libraries\CafeVariome\Query\AbstractQuery</OriginalElement>
+  <nodes>
+    <node x="1354.0" y="553.0">\App\Libraries\CafeVariome\Query\PhenotypeQuery</node>
+    <node x="734.0" y="553.0">\App\Libraries\CafeVariome\Query\MutationQuery</node>
+    <node x="1044.0" y="553.0">\App\Libraries\CafeVariome\Query\MatchAllQuery</node>
+    <node x="0.0" y="0.0">\App\Libraries\CafeVariome\Query\Compiler</node>
+    <node x="1974.0" y="565.5">\App\Libraries\CafeVariome\Query\HPOSimilarityQuery</node>
+    <node x="1664.0" y="553.0">\App\Libraries\CafeVariome\Query\SubjectVariantQuery</node>
+    <node x="310.0" y="553.5">\App\Libraries\CafeVariome\Query\ORPHASimilarityQuery</node>
+    <node x="1044.0" y="395.0">\App\Libraries\CafeVariome\Query\AbstractQuery</node>
+    <node x="0.0" y="553.0">\App\Libraries\CafeVariome\Query\EAVQuery</node>
+    <node x="672.9411764705882" y="0.0">\App\Libraries\CafeVariome\Query\Sanitizer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\App\Libraries\CafeVariome\Query\HPOSimilarityQuery" target="\App\Libraries\CafeVariome\Query\AbstractQuery" relationship="GENERALIZATION">
+      <point x="0.0" y="-42.5" />
+      <point x="2119.0" y="528.0" />
+      <point x="1189.0" y="528.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Query\SubjectVariantQuery" target="\App\Libraries\CafeVariome\Query\AbstractQuery" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="1809.0" y="528.0" />
+      <point x="1189.0" y="528.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Query\ORPHASimilarityQuery" target="\App\Libraries\CafeVariome\Query\AbstractQuery" relationship="GENERALIZATION">
+      <point x="0.0" y="-54.5" />
+      <point x="512.0" y="528.0" />
+      <point x="1189.0" y="528.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Query\EAVQuery" target="\App\Libraries\CafeVariome\Query\AbstractQuery" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="145.0" y="528.0" />
+      <point x="1189.0" y="528.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Query\MutationQuery" target="\App\Libraries\CafeVariome\Query\AbstractQuery" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="879.0" y="528.0" />
+      <point x="1189.0" y="528.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Query\PhenotypeQuery" target="\App\Libraries\CafeVariome\Query\AbstractQuery" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="1499.0" y="528.0" />
+      <point x="1189.0" y="528.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="\App\Libraries\CafeVariome\Query\MatchAllQuery" target="\App\Libraries\CafeVariome\Query\AbstractQuery" relationship="GENERALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8500000000000001" showDependencies="false" x="761.7620320855615" y="286.88235294117646" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
